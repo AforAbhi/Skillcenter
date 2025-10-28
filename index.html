@@ -4,169 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skill Center - Learn Computer & English</title>
-  <style>
-    :root {
-      --yellow: #fdd835;
-      --black: #000000;
-      --grey: #f0f0f0;
-      --white: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--white);
-      color: var(--black);
-    }
-
-    header {
-      background-color: var(--black);
-      color: var(--yellow);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      color: var(--white);
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--yellow);
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('https://images.unsplash.com/photo-1581092334500-684c06f1b6a9?auto=format&fit=crop&w=1400&q=80')
-        center/cover no-repeat;
-      color: var(--white);
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      color: var(--yellow);
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 25px;
-    }
-
-    .hero button {
-      background-color: var(--yellow);
-      border: none;
-      color: var(--black);
-      padding: 12px 25px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .hero button:hover {
-      background-color: var(--white);
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 2rem;
-      color: var(--black);
-      margin-bottom: 30px;
-      position: relative;
-    }
-
-    .section h3::after {
-      content: '';
-      display: block;
-      width: 80px;
-      height: 4px;
-      background: var(--yellow);
-      margin: 10px auto;
-      border-radius: 2px;
-    }
-
-    .courses {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .course-card {
-      background: var(--grey);
-      border-radius: 10px;
-      padding: 25px;
-      width: 250px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: 0.3s;
-    }
-
-    .course-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .course-card h4 {
-      color: var(--black);
-      margin-bottom: 10px;
-    }
-
-    .about {
-      background-color: var(--grey);
-    }
-
-    .about p {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    .contact {
-      background-color: var(--black);
-      color: var(--white);
-    }
-
-    .contact p {
-      font-size: 1rem;
-      margin: 8px 0;
-    }
-
-    footer {
-      background-color: var(--yellow);
-      color: var(--black);
-      text-align: center;
-      padding: 15px 0;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .courses {
-        flex-direction: column;
-        align-items: center;
-      }
-      .course-card {
-        width: 80%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -182,7 +20,7 @@
   <section class="hero">
     <h2>Empowering Rural Youth with Skills</h2>
     <p>Join Skill Center — Learn Computer, English & Digital Skills for a Better Future</p>
-    <button>Enroll Now</button>
+    <button id="enrollBtn">Enroll Now</button>
   </section>
 
   <section id="courses" class="section">
@@ -218,12 +56,14 @@
   <section id="contact" class="section contact">
     <h3>Contact Us</h3>
     <p>📍 Near Pani Tanki, Maghra, Bihar Sharif, Nalanda</p>
-    <p>📞 7004849500</p>
-    <p>✉️ skillcenter@gmail.com</p>
+    <p>📞 <a href="tel:+917004849500" class="contact-link">7004849500</a></p>
+    <p>✉️ <a href="mailto:skillcenter@gmail.com" class="contact-link">skillcenter@gmail.com</a></p>
   </section>
 
   <footer>
     © 2025 Skill Center — Learn. Grow. Succeed.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
